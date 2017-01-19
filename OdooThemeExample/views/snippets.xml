@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+  
+  
+    <template id="cubes" name="Cubes">
+    <section class="s_cubes">
+      <div class="container-fluid oe_custom_bg">
+        <div class="row">
+          <t t-call="theme_irvas10.cube_big"/>
+          <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+            <div class="row">
+              <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                <div class="cube-heading">
+                  <h4 class="text-center">A good subtitle</h4>
+                  <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                </div>
+              </div>
+                <t t-call="theme_irvas10.cube_small1"/>
+            </div>
+            <div class="row">
+                <t t-call="theme_irvas10.cube_small2"/>
+              <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                <div class="cube-heading">
+                  <h4 class="text-center">A good subtitle</h4>
+                  <p class="text-center">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </template>
+            
+    <template id="cube_big" name="Big cube">
+        <section class="oe_custom_bg col-md-6 cube cube-big col-xs-12 col-sm-12 oe_img_bg bg-img-04" >
+        </section>
+    </template>
+      
+    <template id="cube_small1" name="Small cube 1">
+        <section class="cube cube-small col-md-6 col-sm-6 col-xs-12 bg-img-04 oe_custom_bg"></section>
+    </template>
+      
+    <template id="cube_small2" name="Small cube 2">
+        <section class="cube cube-small col-md-6 col-sm-6 col-xs-12 oe_custom_bg bg-img-02"></section>
+    </template>
+    
+    <template id="showcase" name="Showcase">
+      <section class="s_showcase">
+        <div class="box">
+          <div class="hidden-xs line"></div>
+          <div class="row">
+            <div class="col-md-5 col-sm-5 text-right feature">
+              <h4> <i class="fa fa-desktop"></i> First feature </h4>
+              <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+            </div>
+            <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
+              <h4> <i class="fa fa-heart"></i> Another feature </h4>
+              <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 col-sm-5 text-right feature">
+              <h4> <i class="fa fa-paint-brush "></i> Second feature </h4>
+              <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+            </div>
+            <div class="col-md-5 col-sm-5 col-sm-offset-2 text-left feature">
+              <h4> <i class="fa fa-sliders "></i> Last Feature </h4>
+              <p>I then asked Queequeg whether he himself was ever troubled with dyspepsia; expressing the idea very plainly, so that he could take it in.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container mt16 text-center"> <a class="btn btn-default" href="">Discover all the features</a> </div>
+      </section>
+    </template>
+      
+    <template id="color_block_2_inner1" name="Color Blocks 2 inner 1">
+      <section class="col-md-6 s_color_blocks_2_block text-center oe_custom_bg bg-alpha"> <span class="fa fa-shield fa-5x center-block"></span>
+              <h2 class="text-center">This Is a Color Block</h2>
+              <h3 class="text-center text-muted mb16">Highlight Your Content</h3>
+              <p class="text-justify mb32">Color blocks are a simple and effective
+                way to <strong>present and highlight your content</strong> . 
+                Choose an image or a color for the background. You can 
+                even resize and duplicate the blocks to create your own 
+                layout. Add images or icons to customize the blocks.</p>
+              <a href="#" class="btn btn-info mb32"> <i class="fa fa-cog"></i> More Details</a> 
+        </section>
+    </template>
+      
+    <template id="color_block_2_inner2" name="Color Blocks 2 inner 2">  
+      <section class="col-md-6 s_color_blocks_2_block oe_custom_bg bg-gamma text-center"> 
+          <span class="fa fa-cube fa-5x center-block"></span>
+              <h2 class="text-center">An Other Color Block</h2>
+              <h3 class="text-center text-muted mb16">Customize Backgrounds</h3>
+              <p class="text-justify mb32">Color blocks are a simple and effective way to <strong>present and highlight your content</strong> . 
+                Choose an image or a color for the background. You can even 
+                resize and duplicate the blocks to create your own layout. 
+                Add images or icons to customize the blocks.</p>
+              <a href="#" class="btn btn-info mb32"> <i class="fa fa-cog"></i> More Details</a>
+          </section>
+    </template>
+      
+    <template id="color_blocks_2" name="Color Blocks 2">
+      <section class="s_color_blocks_2 o_animation">
+        <div class="container-fluid">
+          <div class="row">
+            <t t-call="theme_irvas10.color_block_2_inner1"/>
+            <t t-call="theme_irvas10.color_block_2_inner2"/>
+        </div>
+        </div>
+        </section>
+    </template>
+    
+    <template id="color_blocks_inner1" name="Color Blocks 4 inner 1">
+      <section class="col-md-3 col-sm-6 s_color_blocks_4_block text-center oe_custom_bg bg-alpha">
+              <h4>A COLOR BLOCK</h4>
+              <p>Highlight Your Content</p>
+      </section>
+    </template>
+    
+    <template id="color_blocks_inner2" name="Color Blocks 4 inner 2">
+      <section class="col-md-3 col-sm-6 s_color_blocks_4_block text-center oe_custom_bg bg-beta">
+              <h4>A COLOR BLOCK</h4>
+              <p>Highlight Your Content</p>
+      </section>
+    </template>
+      
+    <template id="color_blocks_inner3" name="Color Blocks 4 inner 3">
+      <section class=" col-md-3 col-sm-6 s_color_blocks_4_block text-center oe_custom_bg bg-gamma">
+              <h4>A COLOR BLOCK</h4>
+              <p>Highlight Your Content</p>
+      </section> 
+    </template>
+      
+    <template id="color_blocks_inner4" name="Color Blocks 4 inner 4">
+      <section class="col-md-3 col-sm-6 s_color_blocks_4_block text-center oe_custom_bg bg-delta">
+              <h4>A COLOR BLOCK</h4>
+              <p>Highlight Your Content</p>
+      </section>
+    </template>
+      
+    <template id="color_blocks_4" name="Color Blocks 4">
+      <section class="s_color_blocks_4 o_animation">
+        <div class="container-fluid">
+          <div class="row">
+            <t t-call="theme_irvas10.color_blocks_inner1" />
+            <t t-call="theme_irvas10.color_blocks_inner2" />
+            <t t-call="theme_irvas10.color_blocks_inner3" />
+            <t t-call="theme_irvas10.color_blocks_inner4" />
+          </div>
+        </div>
+      </section>
+    </template>
+    
+       <template id="product-slider" name="Product Slider">
+    <div id="myQuoteCarousel" class="carousel quotecarousel slide s_quotes_slider" data-interval="10000">
+        <ol class="carousel-indicators mb0">
+            <li data-target="#myQuoteCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myQuoteCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item text_only active">
+                <div class="container">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-3 text-center mb48">
+							<img class="center-block-100" src=" /theme_irvas10/static/src/img/demo-product-100x100.png" style="" />
+                                    <h3 class="mt8 mb0">First Feature</h3>
+                                        Write some text here. Describe the first feature in a sentence or two.
+                                    <br />
+					<a  href="">More...</a>
+                            </div>
+                            <div class="col-md-3 text-center mb48">
+                                  <img class="center-block-100" src=" /theme_irvas10/static/src/img/demo-product-100x100.png" style="" />
+                                    <h3 class="mt8 mb0">Second Feature</h3>
+                                        Write some text here. Describe the second feature in a sentence or two.
+                                    <br />
+					<a  href="">More...</a>
+                            </div>
+							<div class="col-md-3 text-center mb48">
+                                  <img class="center-block-100" src=" /theme_irvas10/static/src/img/demo-product-100x100.png" style="" />
+                                    <h3 class="mt8 mb0">Second Feature</h3>
+                                        Write some text here. Describe the second feature in a sentence or two.
+                                    <br />
+					<a  href="">More...</a>
+                            </div>
+                             <div class="col-md-3 text-center mb48">
+                                   <img class="center-block-100" src=" /theme_irvas10/static/src/img/demo-product-100x100.png" style="" />
+                                    <h3 class="mt8 mb0">Third Feature</h3>
+                                        Write some text here. Describe the third feature in a sentence or two.
+                                    <br />
+					<a  href="">More...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item text_only">
+                <div class="container">
+                    <div class="content">
+
+                        <div class="row">
+                            <div class="col-md-3 text-center mb48">
+                                  <img class="center-block-100" src=" /theme_irvas10/static/src/img/demo-product-100x100.png" style="" />
+                                    <h3 class="mt8 mb0">Another Feature</h3>
+                                        Write some text here. Describe another feature in a sentence or two.
+                                    <br />
+					<a  href="">More...</a>
+                            </div>
+                            <div class="col-md-3 text-center mb48">
+                                   <img class="center-block-100" src=" /theme_irvas10/static/src/img/demo-product-100x100.png" style="" />
+                                    <h3 class="mt8 mb0">One More Feature</h3>
+                                        Write some text here. Describe one more feature in a sentence or two.
+                                    <br />
+					<a  href="">More...</a>
+                            </div>
+							<div class="col-md-3 text-center mb48">
+                                   <img class="center-block-100" src=" /theme_irvas10/static/src/img/demo-product-100x100.png" style="" />
+                                    <h3 class="mt8 mb0">One More Feature</h3>
+                                        Write some text here. Describe one more feature in a sentence or two.
+                                    <br />
+					<a  href="">More...</a>
+                            </div>
+                             <div class="col-md-3 text-center mb48">
+                                   <img class="center-block-100" src=" /theme_irvas10/static/src/img/demo-product-100x100.png" style="" />
+                                    <h3 class="mt8 mb0">Another Feature</h3>
+                                        Write some text here. Describe this feature in a sentence or two.
+                                   <br />
+					<a  href="">More...</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>
+
+    <template id="snippet_blinds" name="Blinds">
+       <section class="container" style="width: 100%;">
+          <div class="row" style="text-align: center;">
+            <div class="col-sm-6 col-xs-12 col-md-4 col-lg-4" style="padding: 0;">
+              <div class="thumbnail" style="padding:0; border:0; border-radius: 0;">
+                <a href="http://www.myessentialbusiness.com" target="_blank">
+                  <div class="caption">
+                    <h3>My EssentialBusiness, LTD</h3>
+                    <p>is a leading Canadian supplier of <g class="gr_ gr_156 gr-alert gr_spell undefined ContextualSpelling multiReplace" id="156" >high quality</g> aromatherapy, essential <g class="gr_ gr_157 gr-alert gr_gramm undefined Punctuation only-ins replaceWithoutSep" id="157">oil</g> and holistic healthcare needs.</p>
+                    <p>MEB uses our @bizCommerce solution for their daily internet sales activities, including shipping, invoicing and warehouse management.</p>
+                    <p>
+                      <i class="fa fa-plus link-caption"/>
+                    </p>
+                  </div>
+                </a>
+                <img alt="MEB" src="/theme_irvas10/static/src/img/MEB.jpg" class="img img-responsive"/>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 col-md-4 col-lg-4" style="padding: 0;">
+              <div class="thumbnail" style="padding:0; border:0; border-radius: 0;">
+                <a href="http://www.unoluxns.com/en/" target="_blank">
+                  <div class="caption">
+                    <h3>UNO-LUX NS</h3>
+                    <p>is an <g class="gr_ gr_148 gr-alert gr_spell undefined ContextualSpelling ins-del multiReplace" id="148" >inovative</g> engineering company working in the field of Automation of processes and machines and Measurement and data acquisition systems.</p>
+                    <p>UnoLux NS uses our @bizCRM and Project Managment to boost their sales and for more effective management of new product development and implementation of contractual obligations.</p>
+                    <p>
+                      <i class="fa fa-plus link-caption"/>
+                    </p>
+                  </div>
+                </a>
+                <img alt="UNO-LUX NS" src="/theme_irvas10/static/src/img/UNOLUX-NS.jpg" class="img img-responsive"/>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 col-md-4 col-lg-4" style="padding: 0;">
+              <div class="thumbnail" style="padding:0; border:0; border-radius: 0;">
+                <a href="http://www.klinikamaja.rs" target="_blank">
+                  <div class="caption">
+                    <h3><g class="gr_ gr_147 gr-alert gr_spell undefined ContextualSpelling" id="147">Eay</g> Forum </h3>
+                    <p>is an eminent private medical institution that provides services to tens of thousands of their patients. We have implemented a complete IT infrastructure, including web presence and @bizMedical ERP.</p>
+                    <p>
+                      <i class="fa fa-plus link-caption"/>
+                    </p>
+                  </div>
+                </a>
+                <img alt="Eye clinic MAJA" src="/theme_irvas10/static/src/img/maja.jpg" class="img img-responsive"/>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 col-md-4 col-lg-4" style="padding: 0;">
+              <div class="thumbnail" style="padding:0; border:0; border-radius: 0;">
+                <a href="http://www.metropolitan.edu.rs/en/" target="_blank">
+                  <div class="caption">
+                    <h3>Belgrade Metropolitan University (BMU)</h3>
+                    <p>Founded in 2005, BMU was the first university to offer <g class="gr_ gr_152 gr-alert gr_gramm undefined Grammar multiReplace" id="152">studying</g> through <g class="gr_ gr_153 gr-alert gr_gramm undefined Grammar only-ins doubleReplace replaceWithoutSep" id="153" >eLearning</g> system in Serbia.</p>
+                    <p>
+                      <i class="fa fa-plus link-caption"/>
+                    </p>
+                  </div>
+                </a>
+                <img alt="eLearning" src="/theme_irvas10/static/src/img/box1elearning.jpg" class="img img-responsive"/>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 col-md-4 col-lg-4" style="padding: 0;">
+              <div class="thumbnail" style="padding:0; border:0; border-radius: 0;">
+                <a href="http://www.prodamsam.com/" target="_blank">
+                  <div class="caption">
+                    <h3>ProdamSam.com</h3>
+                    <p>Real estate portal</p>
+                    <p>
+                      <i class="fa fa-plus link-caption"/>
+                    </p>
+                  </div>
+                </a>
+                <img alt="Real estate portal" src="/theme_irvas10/static/src/img/box4nekretnine.jpg" class="img img-responsive"/>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12 col-md-4 col-lg-4" style="padding: 0;">
+              <div class="thumbnail" style="padding:0; border:0; border-radius: 0;">
+                <a href="http://www.ni-cat.org/" target="_blank">
+                  <div class="caption">
+                    <h3>NiCAT Cluster</h3>
+                    <p>Web portal for the NiCAT cluster of advanced technologies.</p>
+                    <p>
+                      <i class="fa fa-plus link-caption"/>
+                    </p>
+                  </div>
+                </a>
+                <img alt="NiCAT Cluster" src="/theme_irvas10/static/src/img/nicat.jpg" class="img img-responsive"/>
+              </div>
+            </div>
+          </div>
+        </section>
+    </template>
+
+
+    <template id="place_into_bar6" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.showcase"
+       t-thumbnail="/theme_irvas10/static/src/img/block_showcase.png"/>
+      </xpath>
+    </template>
+
+     <template id="place_into_bar5" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.product-slider"
+       t-thumbnail="/website/static/src/img/blocks/block_features.png"/>
+      </xpath>
+    </template>
+	
+	<template id="place_into_bar4" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.cubes"
+       t-thumbnail="/theme_irvas10/static/src/img/block_cubes.png"/>
+      </xpath>
+    </template>
+    
+    <template id="place_into_bar1" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.color_blocks_2"
+       t-thumbnail="/theme_irvas10/static/src/img/block_color_blocks_2.png"/>
+      </xpath>
+    </template>
+    
+    <template id="place_into_bar2" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.color_blocks_4"
+       t-thumbnail="/theme_irvas10/static/src/img/block_color_blocks_4.png"/>
+      </xpath>
+    </template>
+
+    <template id="place_into_bar_blinds" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.snippet_blinds" t-thumbnail="/theme_irvas10/static/src/img/block_blinds.png"/>
+      </xpath>
+    </template>
+
+
+
+
+	
+<template id="acc" name="Stampac">
+      <section class="col-md-12  s_acc ">
+<div class="container" style="margin-bottom: 20px;">
+
+
+<div class="col-md-5" style="padding-right:55px">
+  <h2>  Dodatni opis </h2>
+                <div class="article">
+                                    
+
+<div>
+                         
+                <table class="table table-striped"
+style="
+    
+    width: 100%;
+    border: 1px solid #dddddd;
+    margin-bottom: 0px;
+">
+                <tbody>
+  
+  <tr style="border: 1px solid #dddddd;
+    background-color: #f5f5f5;"><td style="padding: 7px 15px;">
+<div style="float: left;"> <span class="fa2 fa-check-circle fa-2x"> </span></div>
+
+<div style="padding-top: 5px;"><j>Kljucne karakteristike</j></div></td></tr>
+  
+  <tr class="col-md-12">
+                    <td>
+  <span class="fa2 fa fa-check fa-15x" style="
+    margin: 0 0 0;
+    padding-left: 12px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+"> </span>
+  Opsti podaci<b></b></td>
+                  </tr>
+                  
+                     <tr class="col-md-12">
+                    <td>
+  <span class="fa2 fa fa-check fa-15x" style="
+    margin: 0 0 0;
+    padding-left: 12px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+"> </span>
+  Opsti podaci<b></b></td>
+                  </tr>
+
+                  
+                    <tr class="col-md-12">
+                    <td>
+  <span class="fa2 fa fa-check fa-15x" style="
+    margin: 0 0 0;
+    padding-left: 12px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+"> </span>
+  Opsti podaci<b></b></td>
+                  </tr>
+
+                  
+                    
+
+
+                  </tbody><tbody>
+                </tbody></table>
+
+<section class="col-md-12" style="   
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    padding-left: 14px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    width: 100%;
+    padding-top: 7px;">
+                    <section style="padding-left: 8px;">
+  <span class="fa2 fa fa-check fa-15x" style="
+    margin: 0 0 0;
+    padding-left: 12px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+"> </span>
+  <l>Opsti podaci<b></b></l></section>
+                  </section>                
+
+
+              </div>
+
+
+
+  </div></div>
+
+
+
+<div class="col-md-7 panel-group" role="tablist" id="myCollapse1481277598881">
+ <h2>  Specifikacija </h2>
+
+
+<div class="container">
+<div class="panel-group" id="accordion">
+  <div style="margin-bottom:8px;    border: 1px solid #dddddd;">
+    <div class="panel-heading" style="background-color: #f5f5f5;" >
+     
+        <div style="float: left;">
+                  <span class="fa2 fa-info-circle fa-2x"> </span>
+                </div>
+<div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false">
+          
+         <j> Opsti podaci </j>
+        </div>
+      
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="margin-left:22px; margin-right:22px; margin-top:8px;">
+      <div>
+        
+<center>
+                  <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <td style="width:40%">
+                          <b class="o_default_snippet_text">Tehnologija stampe:</b>
+                        </td>
+                        <td style="width:60%">Inkjet</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b>Brzina:</b>
+                        </td>
+                        <td>do 11 str/min (crno-belo) i 6 str/min (u boji)</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b class="o_default_snippet_text">Format:</b>
+                        </td>
+                        <td>A4</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b class="o_default_snippet_text">Rezolucija stampe:</b>
+                        </td>
+                        <td>do 1.200 dpi</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b class="o_default_snippet_text">Vreme zagrevanja:</b>
+                        </td>
+                        <td/>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b class="o_default_snippet_text">Vreme do prve stranice:</b>
+                        </td>
+                        <td/>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b class="o_default_snippet_text">Dimenzije (WxDxH):</b>
+                        </td>
+                        <td/>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b class="o_default_snippet_text">Tezina:</b>
+                        </td>
+                        <td/>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b class="o_default_snippet_text">Memorija:</b>
+                        </td>
+                        <td/>
+                      </tr>
+                    </tbody>
+                  </table>
+                </center>
+
+
+
+
+
+</div>
+    </div>
+  </div>
+  <div style="margin-bottom:8px;    border: 1px solid #dddddd;">
+    <div class="panel-heading" style="background-color: #f5f5f5;">
+      
+  <div style="float: left;">
+                  <span style="" class="fa2 fa-file-o fa-2x"> </span>
+                </div>       
+
+ <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">
+          
+        <j>  Rukovanje papirom </j>
+        </div>
+   
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="margin-left: 22px; margin-right: 22px; margin-top: 8px;">
+      <div>
+
+ <table class="table table-striped ">
+                  <tbody>
+                    <tr>
+                      <td style="width:40%">
+                        <b class="o_default_snippet_text">Ulazni kapacitet:</b>
+                      </td>
+                      <td style="width:60%"/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Max. ulazni kapacitet sa opcijama:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Duplex:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Max. izlazni kapacitet:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Dokument procesor:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td/>
+                      <td/>
+                    </tr>
+                  </tbody>
+                </table>      
+
+
+      </div>
+    </div>
+  </div>
+  <div style="margin-bottom:8px;    border: 1px solid #dddddd;">
+    <div class="panel-heading" style="background-color: #f5f5f5;">
+    <div style="float: left;">
+ <span class="fa2 fa-sitemap fa-2x"> </span> </div>
+        <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false">
+          
+          <j>Mogucnost povezivanja</j>
+        </div>
+      
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="margin-left:22px; margin-right:22px; margin-top:8px;height: 0px;">
+      <div>
+     
+
+<table class="table table-striped ">
+                  <tbody>
+                    <tr>
+                      <td style="width:40%">
+                        <b class="o_default_snippet_text">USB:</b>
+                      </td>
+                      <td style="width:60%"/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">LAN:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Wireless:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Mobile:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td/>
+                      <td/>
+                    </tr>
+                  </tbody>
+                </table>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div style="margin-bottom:8px;    border: 1px solid #dddddd;">
+    <div class="panel-heading" style="background-color: #f5f5f5;">
+    <div style="float: left;">
+ <span class="fa2 fa-print fa-2x"> </span> </div>
+        <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false">
+          
+          <j>Stampa</j>
+        </div>
+      
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="margin-left:22px; margin-right:22px; margin-top:8px;height: 0px;">
+      <div>
+<table class="table table-striped ">
+                  <tbody>
+                    <tr>
+                      <td style="width:40%">
+                        <b class="o_default_snippet_text">Procesor:</b>
+                      </td>
+                      <td style="width:60%"/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Max. ulazni kapacitet sa opcijama:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Emulacija:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Fontovi:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <b class="o_default_snippet_text">Karakteristike:</b>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong class="o_default_snippet_text">Mobilna stampa:</strong>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong class="o_default_snippet_text">Operativni sistem:</strong>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr>
+                      <td/>
+                      <td/>
+                    </tr>
+                  </tbody>
+                </table>     
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div style="margin-bottom:8px;    border: 1px solid #dddddd;">
+    <div class="panel-heading" style="background-color: #f5f5f5;">
+    <div style="float: left;">
+ <span class="fa2 fa-inbox fa-2x"> </span> </div>
+        <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false">
+          
+          <j>Potrosni materijal</j>
+        </div>
+      
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" aria-expanded="false" style="margin-left:22px; margin-right:22px; margin-top:8px;height: 0px;">
+      <div>
+  <table class="table table-striped ">
+                <tbody>
+                  <tr>
+                    <td style="width:40%">
+                      <b class="o_default_snippet_text">Kapacitet inicijalnog tonera (cmi):</b>
+                    </td>
+                    <td style="width:60%"/>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b class="o_default_snippet_text">Kapacitet regularnog tonera (cmi):</b>
+                    </td>
+                    <td/>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b class="o_default_snippet_text">Toner:</b>
+                    </td>
+                    <td/>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b class="o_default_snippet_text">Servisni set:</b>
+                    </td>
+                    <td/>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b class="o_default_snippet_text">Maintenance kit (servisni kit):</b>
+                    </td>
+                    <td/>
+                  </tr>
+                  <tr>
+                    <td/>
+                    <td/>
+                  </tr>
+                </tbody>
+              </table>
+                  </div>
+    </div>
+  </div>
+
+
+
+
+<div style="margin-bottom:8px;    border: 1px solid #dddddd;">
+    <div class="panel-heading" style="background-color: #f5f5f5;">
+    <div style="float: left;">
+ <span class="fa2 fa-certificate fa-2x"> </span> </div>
+        <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false">
+          
+          <j>Garancija</j>
+        </div>
+      
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" aria-expanded="false" style="margin-left:22px; margin-right:22px; margin-top:8px;height: 0px;">
+      <div>
+  
+ <table class="table table-striped ">
+                <tbody>
+                  <tr>
+                    <td style="width:40%">
+                      <b class="o_default_snippet_text">Garancija:</b>
+                    </td>
+                    <td style="width:60%"/>
+                  </tr>
+                  <tr>
+                    <td/>
+                    <td/>
+                  </tr>
+                </tbody>
+              </table>
+                  </div>
+    </div>
+  </div>
+
+
+
+<div style="margin-bottom:8px;    border: 1px solid #dddddd;">
+    <div class="panel-heading" style="background-color: #f5f5f5;">
+    <div style="float: left;">
+ <span class="fa2 fa-archive fa-2x"> </span> </div>
+        <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false">
+          
+          <j>Sadrzaj paketa</j>
+        </div>
+      
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" aria-expanded="false" style="margin-left:22px; margin-right:22px; margin-top:8px;height: 0px;">
+      <div>
+  
+  <table class="table table-striped ">
+                <tbody>
+                  <tr>
+                    <td style="width:40%">
+                      <b class="o_default_snippet_text"> Stampac:</b>
+                    </td>
+                    <td style="width:60%"/>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b class="o_default_snippet_text">Kablovi:</b>
+                    </td>
+                    <td/>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b class="o_default_snippet_text">Uputstvo:</b>
+                    </td>
+                    <td/>
+                  </tr>
+                  <tr>
+                    <td/>
+                    <td/>
+                  </tr>
+                </tbody>
+              </table>
+                  </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+</div>
+
+
+             </div>
+          </div>
+ 
+        
+</section>
+    </template>
+
+
+    <template id="place_into_bar22" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.acc"
+       t-thumbnail="/theme_irvas10/static/src/img/accordion.png"/>
+      </xpath>
+    </template>
+	
+
+
+
+
+
+	
+<template id="toner" name="Toner">
+      <section class="col-md-12  s_toner " style=" margin-bottom: 20px;
+">
+
+	  
+	 
+	  <div id="specification" class="container">
+	  <div id="description" class="col-md-6 col-sm-12">
+              <h2>  Dodatni opis </h2>
+                <div class="article">
+                    
+                    <p>Dodatni opis</p>
+                    </div>
+                </div>
+	  
+	  
+	  <div class="col-md-6  col-sm-12 hide_on_large_tablet">
+                <h2 > Specifikacija</h2>
+                <table>
+                    <tbody>
+                        <tr style="padding: 10px 15px;">
+                            <th style="width:40%;/* padding-left: 20px; */">Oznaka proizvodjaca:</th>
+                            <td class="low_price_popup"></td>
+                        </tr>
+                        <tr>
+                            <th>Boja:</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Kapacitet:</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Radni ciklus:</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Tip proizvoda:</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Proizvodjac:</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+	  
+	  
+	  
+	  
+	  </div>
+               
+        
+</section>
+    </template>
+
+
+    <template id="place_into_bar33" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.toner"
+       t-thumbnail="/theme_irvas10/static/src/img/accordion.png"/>
+      </xpath>
+    </template>
+	
+
+
+
+
+
+  </data>
+</openerp>

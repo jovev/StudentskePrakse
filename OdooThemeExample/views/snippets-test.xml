@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+ 
+<template id="fixed-backg" name="Fixed Background">
+<section class="s_lead_bar_2 parallax" style="background-image: url('/theme_irvas10/static/src/img/woods.jpg'); background-attachment: fixed; background-position: center;" data-scroll-background-ratio="1" data-scroll-background-offset="1">
+          <div>
+            <div class="oe_structure">
+              <div class="o-color-overlay" style="height:inherit"></div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="o-title-lg mt0">Grow your sales <br/>and boost your productivity.</h2>
+                    <h3 class="o-title-xs mb0">The integrated solution that grows with you.</h3>
+                  </div>
+                  <div class="col-md-4 col-md-offset-4 mt48">
+                    <a href="/trial" class="btn btn-success btn-lg">
+                            Start your <strong>Free Trial</strong> <i class="fa fa-1x fa-arrow-circle-o-right"></i>
+                          </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+</template>
+ 
+<template id="button-insert2" name="Insert Button">
+  <div class="well button-well">
+    <p>
+    <a class="btn btn-success btn-lg mb4 btn-inside" href="#">Click here</a>
+    </p>
+  </div>
+</template>
+
+<template id="custom_image_snip" name="Responsive img">
+  <section class="container-fluid" style="padding:0;">
+    <div class="col-xs-12 col-md-12 col-sm-12" style="padding:0">
+      <img src="/theme_irvas10/static/src/img/img-responsive.jpg" class="img-responsive" style="width:100%;"/>
+    </div>
+  </section>
+</template>
+
+
+   <template id="feature-list" name="Feature List">
+   <section class="mb0 mt32">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-xs-12">
+        <h3 class="mb32">Subtitle goes here</h3>
+        <div class="row">
+        <div class="col-sm-2 col-md-2 col-xs-12 s_appssection_box s_appssection_bbox pull-left"> <a href="#"> <img src="/theme_irvas10/static/src/img/feature-icon.png" class="img-responsive icon_radius" alt="Icon"/>
+          <p>Figure</p>
+          </a> </div>
+        <div class="col-sm-2 col-md-2 col-xs-12 s_appssection_box s_appssection_sbox pull-left"> <a href="#"> <img src="/theme_irvas10/static/src/img/feature-icon.png" class="img-responsive icon_radius" alt="Icon"/>
+          <p>Figure</p>
+          </a> </div>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-xs-12">
+        <h3 class="mb32">Subtitle goes here</h3>
+        <div class="row">
+        <div class="col-sm-2 col-md-2 col-xs-12 s_appssection_box s_appssection_bbox pull-left"> <a href="#"> <img src="/theme_irvas10/static/src/img/feature-icon.png" class="img-responsive icon_radius" alt="Icon"/>
+          <p>Figure</p>
+          </a> </div>
+        <div class="col-sm-2 col-md-2 col-xs-12 s_appssection_box s_appssection_sbox pull-left"> <a href="#"> <img src="/theme_irvas10/static/src/img/feature-icon.png" class="img-responsive icon_radius" alt="Icon"/>
+          <p>Figure</p>
+          </a> </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+</template>  
+    
+     <template id="place_into_bar9" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_feature']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.fixed-backg"
+        t-thumbnail="/theme_irvas10/static/src/img/block_fixed_backg.png"/>
+      </xpath>
+    </template>
+
+    <template id="place_into_bar10" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_content']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.custom_image_snip"
+        t-thumbnail="/theme_irvas10/static/src/img/block_fixed_backg.png"/>
+      </xpath>
+    </template>
+
+
+ <template id="place_into_bar8" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.button-insert2"
+        t-thumbnail="/website/static/src/img/blocks/block_button.png"/>
+      </xpath>
+    </template>
+
+
+ <template id="place_into_bar7" inherit_id="website.snippets" name="Place into bar">
+      <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+        <t t-snippet="theme_irvas10.feature-list"
+       t-thumbnail="/theme_irvas10/static/src/img/block_feature_list.png"/>
+      </xpath>
+    </template>
+
+	
+  </data>
+</openerp>

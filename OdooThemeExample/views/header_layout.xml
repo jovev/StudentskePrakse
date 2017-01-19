@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+  <data>
+<!--<template id="custom_search" inherit_id="website_sale.search" name="Custom Search">
+<xpath expr="//form" position="replace"></xpath>
+</template> -->
+<!-- Customize header  -->
+<template id="custom_header" inherit_id="website.layout" name="Custom Header">
+
+  <!-- Assign an id  -->
+  <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+    <attribute name="id">forum_header</attribute>
+  </xpath>
+
+  <!-- Add an element after the top menu  -->
+  <xpath expr="//div[@id='wrapwrap']/header/div" position="replace">
+
+<div class="header-top bg-theme-colored sm-text-center">
+      <div class="container">
+        <div class="row" style="margin-right: -53px;">
+          <div class="col-md-6">
+            <div class="widget no-border m-0">
+              <ul class="list-inline social-icons icon-dark icon-circled icon-theme-colored icon-sm sm-text-center mt-sm-15">
+                <li class="text-new"><i class="fa fa-phone-square"/> +381/18-589470</li>
+                <li class="text-new"><i class="fa fa-envelope"/> info@irvas.rs </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="widget no-border m-0">
+              <ul class="list-inline flip sm-pull-none sm-text-center mt-5">
+               
+<div class="list-inline col-md-8">
+ <li>
+                  
+                   <t t-if="user_id.id == 4">
+                    <a  style="padding-left: 5px;
+padding-right: 5px;" href="/web/login" class="text-new"><i class="fa fa-sign-in"/> Log in</a>
+                  </t>
+                  <t t-if="user_id.id != 4">
+                    <a style="padding-left: 5px;
+padding-right: 5px;" href="/web/session/logout?redirect=/" class="text-new"><i class="fa fa-sign-out"/> Logout</a>
+                  </t>       
+             
+		       <t t-if="user_id.id == 4">
+                  <a style="padding-left: 2px;
+padding-right: 5px;" href="/web/signup" class="text-new"><i class="fa fa-key"></i> Register</a>
+</t>
+ <t t-if="user_id.id != 4">
+                           <a style="padding-left: 2px; padding-right: 5px;" href="/my/home" class="text-new"><i class="fa fa-user"/> My Account</a>
+                       </t>
+                </li>
+     </div>
+<div align="right" class="list-inline pull-right col-md-4">
+       <li>
+ <span ><t t-call="website.language_selector"/></span>
+        </li>     </div>         </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+<div class="header-middle">
+    <div class="container">
+	  <div class="row">
+	 
+<div class="oe_structure col-md-6 col-sm-6 col-xs-12"><a href="http://139.59.133.167:8069/"><img src="/web/image/1401"/></a></div> 
+<div class="col-md-6 col-sm-6 col-sx-12" style="
+    padding-left: 55px;">
+        
+       <div> <form method="get" class="top-search" action="/shop">
+  <div class="input-group">
+    <div class="oe_search">
+      <input name="search" class="search-query form-control oe_search_box" placeholder="Search..." type="text"/>
+    </div>
+    <span class="input-group-btn">
+      <button type="submit" class="btn btn-default oe_search_button">
+        <i class="fa fa-search"/>
+      </button>
+    </span>
+  </div>
+</form></div>
+      </div>
+
+         <a class="navbar-brand" href="/" t-if="website" t-field="website.name" style="display: none;">My Website</a>  
+    
+</div>
+</div>
+</div>
+
+     <div class="navbar navbar-default navbar-irvas">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"/>
+                                    <span class="icon-bar"/>
+                                    <span class="icon-bar"/>
+                                </button>
+                               
+            </div>
+                            <div class="collapse navbar-collapse navbar-top-collapse">
+                                <ul class="nav navbar-nav navbar-right" id="top_menu">
+                                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                        <t t-call="website.submenu"/>
+                                    </t>
+                                    <li class="divider" t-ignore="true" t-if="website.user_id != user_id"/>
+                                    <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <b>
+                                                <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
+                                                <span class="caret"/>
+                                            </b>
+                                        </a>
+                                        <ul class="dropdown-menu js_usermenu" role="menu">
+                                            <li id="o_logout"><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+  </xpath>
+</template>
+  </data>
+</openerp>

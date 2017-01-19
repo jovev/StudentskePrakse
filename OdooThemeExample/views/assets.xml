@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+<template id="myscript" name="My script" inherit_id="website.assets_editor">
+    <xpath expr="script[last()]" position="after">
+       <script type="text/javascript" src="/theme_irvas10/static/src/js/theme.forum.editor.js" />
+    </xpath>
+</template>
+
+</data>
+</openerp>

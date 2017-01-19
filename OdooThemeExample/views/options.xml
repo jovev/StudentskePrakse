@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <openerp>
+        <data>
+            <!-- <template id="specifikacija_opt" name="Snippet Specification Options" inherit_id="website.snippet_options">
+                <xpath expr="//div[@data-js='background']" position="after">
+                    <div data-selector=".sepcifikacija_title" data-js="snippet_specifikacija_opt">
+
+                        <li class="dropdown-submenu">
+                            <a href="#" class="opt_newtab">Add new Tab</a>
+                            <a href="#" class="opt_removetab">Remove Tab</a>
+                        </li>
+                    </div>
+                </xpath>
+            </template>
+
+            <template id="new_well_opt" name="Snippet new well Options" inherit_id="website.snippet_options">
+                <xpath expr="." position="inside">
+                    <div data-selector=".new_well">
+
+                        <li class="dropdown-submenu">
+                            <a href="#" class="opt_newtab">Color</a>
+                        </li>
+                    </div>
+                </xpath>
+            </template>
+
+            <template id="container_opt" name="Irvas container options" inherit_id="website.snippet_options">
+                <xpath expr="." position="inside">
+                    <div data-selector=".container">
+
+                        <li class="dropdown-submenu">
+                            <a href="#" class="opt_newtab">Snippet width</a>
+				<ul class="dropdown-menu">
+          				<li data-select_class="container-fluid"><a>Full width</a></li>
+          				<li data-select_class="container"><a>Boxed</a></li>
+				</ul>
+                        </li>
+                    </div>
+                </xpath>
+            </template>
+
+            <template id="container_opt2" name="Irvas container options2" inherit_id="website.snippet_options">
+                <xpath expr="." position="inside">
+                    <div data-selector=".container-fluid">
+                        
+                        <li class="dropdown-submenu">
+                            <a href="#" class="opt_newtab">Snippet width</a>
+				<ul class="dropdown-menu">
+          				<li data-select_class="container-fluid"><a>Full width</a></li>
+          				<li data-select_class="container"><a>Boxed</a></li>
+				</ul>
+                        </li>
+                    </div>
+                </xpath>
+            </template>
+
+
+
+<template id="button_custom2_opt" name="Custom button options" inherit_id="website.snippet_options">
+  <xpath expr="//div[@data-js='background']" position="after">
+    <div data-selector=".btn-inside">
+      <li class="dropdown-submenu">
+        <a href="#">Button Color</a>
+        <ul class="dropdown-menu">
+          <li data-select_class="btn-default"><a>Default</a></li>
+          <li data-select_class="btn-primary"><a>Primary</a></li>
+          <li data-select_class="btn-success"><a>Success</a></li>
+	  <li data-select_class="btn-info"><a>Info</a></li>
+	  <li data-select_class="btn-warning"><a>Warning</a></li>
+	  <li data-select_class="btn-danger"><a>Danger</a></li>
+	</ul>
+      </li>
+    </div>
+  </xpath>
+ </template>
+<template id="button_custom2_opt2" name="Custom button options2" inherit_id="website.snippet_options">
+  <xpath expr="//div[@data-js='background']" position="after">
+    <div data-selector=".btn-inside">
+      <li class="dropdown-submenu">
+        <a href="#">Button Size</a>
+        <ul class="dropdown-menu">
+          <li data-select_class="btn-lg"><a>Large</a></li>
+          <li data-select_class="btn-md"><a>Medium</a></li>
+          <li data-select_class="btn-sm"><a>Small</a></li>
+	  <li data-select_class="btn-xs"><a>Extra small</a></li>
+	  <li data-select_class="btn-block"><a>Block</a></li>
+	</ul>
+      </li>
+    </div>
+  </xpath>
+ </template>
+<template id="button_custom2_opt3" name="Custom button options3" inherit_id="website.snippet_options">
+  <xpath expr="//div[@data-js='background']" position="after">
+    <div data-selector=".button-well">
+      <li class="dropdown-submenu">
+        <a href="#">Align</a>
+        <ul class="dropdown-menu">
+          <li data-select_class="text-left"><a>Left</a></li>
+          <li data-select_class="text-right"><a>Right</a></li>
+          <li data-select_class="text-center"><a>Center</a></li>
+	</ul>
+      </li>
+    </div>
+  </xpath>
+ </template> -->
+
+<template id="snippet_testimonial_opt" name="Snippet Testimonial Options" inherit_id="website.snippet_options">
+  <xpath expr="//div[@data-js='background']" position="after">
+    <div data-selector=".s_acc"> <!-- Options group -->
+      <li class="dropdown-submenu">
+        <a href="#">Your Option</a>
+        <ul class="dropdown-menu"> <!-- Options list -->
+          <li data-select_class="on_clone"></li>
+          <li data-select_class="opt_grey_bg"><a>Grey Bg</a></li>
+          <li data-select_class=""><a>None</a></li>
+        </ul>
+      </li>
+    </div>
+  </xpath>
+ </template>
+
+        </data>
+    </openerp>

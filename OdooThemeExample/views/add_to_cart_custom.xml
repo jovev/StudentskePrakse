@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+    	<template id="custom_add_to_cart" inherit_id="website_sale.products_add_to_cart" name="Irvas Add to Cart">
+        <xpath expr="//a[@class='btn btn-default btn-xs a-submit']" position="replace">
+        	<a class="btn btn-primary btn-xs thumb_cart a-submit"><span class="fa fa-shopping-cart"/></a>
+        </xpath>
+        <xpath expr="//a[@class='btn btn-default btn-xs']" position="replace">
+        	<a class="btn btn-primary btn-xs thumb_cart" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))"><span class="fa fa-shopping-cart"/></a>
+        </xpath>
+      </template>
+
+    </data>
+</openerp>
