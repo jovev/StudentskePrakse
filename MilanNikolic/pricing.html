@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Price list</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> 
+	
+	<style>
+		*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+}
+.blue {color: #00a9da;}
+#wrapper {
+	background-color: #eceff7;
+	width: 100%;
+	overflow: auto;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.header{
+	width: 100%;
+	text-align: center;
+}
+.header h1 {
+	text-transform: capitalize;
+	line-height: 40px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.header h4 {
+	font-weight: 400
+}
+.line{
+	width: 200px; 
+	margin: 0 auto 15px;
+	height: 1px;
+	background-color:#00a9da;
+}
+.line2{
+	width: 50px; 
+	margin: 15px auto 0;
+	height: 5px;
+	background-color:#00a9da;
+	-webkit-transition: all 0.7s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+.heading2:hover + .line2{width: 200px;}
+.priceWrap {
+	width: 25%;
+	float: left;
+	padding: 15px;
+	margin: 25px 0;
+}
+.priceContainer {	
+	text-align: center;
+	background-color: #fff;	
+}
+.priceContainerHeader {
+	padding: 20px;
+	border-bottom: 5px solid #00a9da;
+
+}
+.clearfix {clear: both;}
+.priceContainer ul {
+	list-style-type: none;
+}
+.priceContainer ul li {
+	padding: 15px;
+	border-bottom: 1px solid #e8e8e8;
+}
+.priceContainer ul li:last-child{
+	padding: 35px;
+	border: none;
+}
+.priceContainer span {
+	font-size: 30px;
+	margin: 10px 0;
+}
+.marginTop {margin-top: 10px;}
+.marginBottom {margin-bottom: 10px;}
+.button {
+	text-decoration: none;
+	color: #00a9da;
+	border: 1px solid #00a9da;
+	border-radius: 5px;
+	padding: 12px;
+}
+
+.button:hover {
+	background-color: #00a9da;
+	color: #fff;
+	/*-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	 -webkit-animation-duration: 1s;*/
+	-webkit-animation-name: fadeInRight;
+	        animation-name: fadeInRight;	
+  -webkit-animation-duration: 1s;	
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/************************ RESPONSIVE **************************/
+
+@media only screen and (max-width: 1174px) {
+	.container {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.priceWrap {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.priceWrap {
+		width: 100%;
+	}
+}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<div class="header">
+				<h1 class="blue heading2">Choose your pricing</h1>
+				<div class="line2"></div>
+				<div class="line"></div>
+				<h4>We manage your business</h4>
+			</div>
+			
+			<div class="priceWrap">
+				<div class="priceContainer">
+					<div class="priceContainerHeader">
+						<h2>Standard</h2>
+					</div>
+					<ul>
+						<li><p class="marginBottom">Starting at</p>  <span class="blue">19.99 $</span> <p class="marginTop"> Per month</p></li>
+						<li>Wordpress</li>
+						<li>Html5 CSS3</li>
+						<li>PSD Files</li>
+						<li>unlimited support  </li>
+						<li>
+							<a href="#" class="button">Order Now!</a>							
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			<div class="priceWrap">
+				<div class="priceContainer">
+					<div class="priceContainerHeader">
+						<h2>Medium</h2>
+					</div>
+					<ul>
+						<li><p class="marginBottom">Starting at</p>  <span class="blue">19.99 $</span> <p class="marginTop"> Per month</p></li>
+						<li>Wordpress</li>
+						<li>Html5 CSS3</li>
+						<li>PSD Files</li>
+						<li>unlimited support  </li>
+						<li><a href="#" class="button">Order Now!</a></li>
+					</ul>
+					
+				</div>
+			</div>
+			<div class="priceWrap">
+				<div class="priceContainer">
+					<div class="priceContainerHeader">
+						<h2>Premium</h2>
+					</div>
+					<ul>
+						<li><p class="marginBottom">Starting at</p>  <span class="blue">19.99 $</span> <p class="marginTop"> Per month</p></li>
+						<li>Wordpress</li>
+						<li>Html5 CSS3</li>
+						<li>PSD Files</li>
+						<li>unlimited support  </li>
+						<li><a href="#" class="button">Order Now!</a></li>
+					</ul>
+					
+				</div>
+			</div>
+			<div class="priceWrap">
+				<div class="priceContainer">
+					<div class="priceContainerHeader">
+						<h2>Ultimate</h2>
+					</div>
+					<ul>
+						<li><p class="marginBottom">Starting at</p>  <span class="blue">19.99 $</span> <p class="marginTop"> Per month</p></li>
+						<li>Wordpress</li>
+						<li>Html5 CSS3</li>
+						<li>PSD Files</li>
+						<li>unlimited support  </li>
+						<li><a href="#" class="button">Order Now!</a></li>
+					</ul>
+					
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</body>
+</html>

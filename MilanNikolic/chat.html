@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="description" content="">
+				<meta name="author" content="">
+				<title>Chat</title>
+				<link rel="shortcut icon" href="">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			<style>
+				#offline_article {
+					position: fixed;
+					display: block;
+					z-index: 1000;
+					width: 250px;
+					/*height: 200px;*/
+					background-color: #fff;
+					bottom: 6px;
+					right: 6px;
+				}
+				.hidden-print{ 
+					width: 100%;
+					padding: 10px;
+					border-radius: 0;
+					position: relative;				
+				}
+				.fa-chevron-down, 
+				.fa-chevron-up {
+					position: absolute;
+					right: 8px;
+				}
+				#chat-offline-content p {
+					padding: 10px;
+				}
+				.wrapper-chat {
+					padding: 10px;
+					font-weight: 700;
+					color: #fff;
+					background-color: darkred;
+					cursor: pointer;
+				}
+			</style>
+</head>
+
+<body>
+		
+			
+			
+			<article id="offline_article">
+				<div id="offline-container">
+					<button class="btn btn-primary hidden-print">
+						Live chat status: <strong>OFFLINE</strong> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+					</button>
+					<div id="chat-offline-content">
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia atque vitae odit tempora esse dolores, eaque ipsa aspernatur. Minima natus repellendus ducimus dolores, ab obcaecati. Beatae reiciendis, id suscipit voluptates. </p>
+					</div>
+					<button class="btn btn-primary hidden-print">
+						<i class="fa fa-envelope" aria-hidden="true"></i> Send us an email 
+					</button>
+				</div>
+				<div class="wrapper-chat text-center">
+					WE ARE OFFLINE <i class="fa fa-chevron-up" aria-hidden="true"></i>
+				</div>
+			</article>
+			
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+			var hiddenContent = $("#offline-container");
+			$("#offline-container").hide();
+			$(".wrapper-chat").click(function(){
+				$("#offline-container").slideToggle("slow");
+			});
+			$(".hidden-print").click(function(){
+				$("#offline-container").slideToggle("slow");
+			});
+			
+		
+		</script>
+		
+</body>
+</html>

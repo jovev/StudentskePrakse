@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="description" content="">
+				<meta name="author" content="">
+				<title>Starter Template for Bootstrap 3.3.7</title>
+				<link rel="shortcut icon" href="">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			<style>
+				.statisticsContainer {color: #fff; position: relative;}
+				.statisticsContainer h2 { right: 15px; top: 20px;}
+				#totalVisits{background-color: rgba(52, 152, 219,0.8);}
+				#newVisits{background-color: rgba(231, 76, 60,0.8);}
+				#returnedVisits{background-color: rgba(22, 160, 133,0.8);}
+				#newBuyersVisits{background-color: rgba(155, 89, 182,0.8);}
+				.numberStat{transition: transform 0.7s ease-in-out; }
+				.statisticsContainer:hover .numberStat{transform: translate(150px);}
+				.fa-users{font-size: 4em; position: absolute; right: 10px; top: 17%; transition: opacity 0.7s ease-in-out;}
+				.statisticsContainer:hover .fa-users{opacity: 0;}
+			</style>
+</head>
+
+<body>
+		<section id="teamMeambers">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 statisticsContainer" id="totalVisits">
+						<h2 class="numberStat"> 185968</h2>
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<p>Total visitors</p>
+						
+					</div>
+					<div class="col-md-3 col-sm-6 statisticsContainer" id="newVisits">
+						<h2 class="numberStat">968</h2>
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<p>New visitors in last month</p>
+					</div>
+					<div class="col-md-3 col-sm-6 statisticsContainer" id="returnedVisits">
+						<h2 class="numberStat">5968</h2>
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<p>Returned visitors</p>
+					</div>
+					<div class="col-md-3 col-sm-6 statisticsContainer" id="newBuyersVisits">
+						<h2 class="numberStat">450</h2>
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<p>New Buyers in last month</p>
+					</div>
+				</div>
+				
+				
+			</div>
+		</section>		
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+			$('.numberStat').each(function () {
+				$(this).prop('Counter',0).animate({
+					Counter: $(this).text()
+				}, {
+					duration: 4000,
+					easing: 'swing',
+					step: function (now) {
+						$(this).text(Math.ceil(now));
+					}
+				});
+			});		
+		</script>
+		
+</body>
+</html>

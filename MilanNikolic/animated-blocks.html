@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Blocks</title>
+	<link rel="stylesheet" href="css/animated-blocks.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="row">
+		<div class="box" id="box1">
+			<div class="number"><p>1</p></div>
+			<div class="header">
+				<h2>Wanted!</h2>
+				<p>Web designer wanted!</p>			
+			</div>
+			<div class="clearfix"></div>
+			<div class="boxContent">
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum assumenda delectus, laboriosam incidunt, nostrum rerum possimus odit, fuga quidem veritatis sint beatae ea id, iusto aut magni consectetur quaerat. </p>
+			</div>
+			<i class="fa fa-file-text " id="boxicon1" style="font-size:130px;" aria-hidden="true"></i>
+
+		</div>
+		<div class="box" id="box2">
+			<div class="number"><p>2</p></div>
+			<div class="header">
+				<h2>Wanted!</h2>
+				<p>Web designer wanted!</p>			
+			</div>
+			<div class="clearfix"></div>	
+			<div class="boxContent">
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum assumenda delectus, laboriosam incidunt, nostrum rerum possimus odit, fuga quidem veritatis sint beatae ea id, iusto aut magni consectetur quaerat. </p>
+			</div>
+			<i class="fa fa-file-text " id="boxicon2" style="font-size:130px;" aria-hidden="true"></i>
+		</div>
+		<div class="box" id="box3">
+			<div class="number"><p>3</p></div>
+			<div class="header">
+				<h2>Wanted!</h2>
+				<p>Web designer wanted!</p>
+				
+			</div>
+			<div class="clearfix"></div>
+			<div class="boxContent">
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorum assumenda delectus, laboriosam incidunt, nostrum rerum possimus odit, fuga quidem veritatis sint beatae ea id, iusto aut magni consectetur quaerat. </p>
+			</div>
+			<i class="fa fa-file-text " id="boxicon3" style="font-size:130px;" aria-hidden="true"></i>
+		</div>
+		<div class="clearfix"></div>			
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+		   $("#box1").hover(function(){
+					$("#boxicon1").animate({right: '60%'}, 'slow');
+					}, function(){
+					$("#boxicon1").animate({right: '23px'}, 'slow');
+				});
+
+			 $("#box2").hover(function(){
+					$("#boxicon2").animate({right: '60%'}, 'slow');
+					}, function(){
+					$("#boxicon2").animate({right: '23px'}, 'slow');
+				});
+
+			 $("#box3").hover(function(){
+					$("#boxicon3").animate({right: '60%'}, 'slow');
+					}, function(){
+					$("#boxicon3").animate({right: '23px'}, 'slow');
+				});
+		});
+	</script>
+
+</body>
+</html>
